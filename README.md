@@ -1,7 +1,7 @@
 k8s-learning
 ========
 
-## Before any of samples can be run few thing have to be installed:
+## Before any of samples can be run few things have to be installed:
 
 1. **Docker** - for virtualization
 2. **minikube** - test purpose small kubernetes cluster
