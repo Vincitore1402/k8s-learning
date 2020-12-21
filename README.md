@@ -7,19 +7,19 @@ k8s-learning
 2. **minikube** - test purpose small kubernetes cluster
 3. **kubectl** - command line tool for managing kubernetes clusters
 
-####Docker installation guide:
+###Docker installation guide:
 
 ```
 https://docs.docker.com/engine/install/ubuntu
 ```
 
-####minikube installation guide:
+###minikube installation guide:
 
 ```
 https://minikube.sigs.k8s.io/docs/start
 ```
 
-####kubectl installation guide:
+###kubectl installation guide:
 
 ```
 https://kubernetes.io/ru/docs/tasks/tools/install-kubectl
