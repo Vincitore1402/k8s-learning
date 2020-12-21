@@ -1,13 +1,32 @@
 k8s-learning
 ========
 
-Docker, minikube and kubectl installed are required
+## Before any of samples can be run few thing have to be installed:
 
-1. kubectl apply -f mongo-express-autoscale/mongo-secret.yaml
-2. kubectl apply -f mongo-express-autoscale/mongo.yaml
-3. kubectl apply -f mongo-express-autoscale/mongo-configmap.yaml
-4. kubectl apply -f mongo-express-autoscale/mongo-express.yaml
-5. kubectl apply -f mongo-express-autoscale/metrics.yaml
-6. kubectl autoscale deployment mongo-express-deployment --cpu-percent=50 --min=1 --max=5
+1. **Docker** - for virtualization
+2. **minikube** - test purpose small kubernetes cluster
+3. **kubectl** - command line tool for managing kubernetes clusters
+
+####Docker installation guide:
+
+```
+https://docs.docker.com/engine/install/ubuntu
+```
+
+####minikube installation guide:
+
+```
+https://minikube.sigs.k8s.io/docs/start
+```
+
+####kubectl installation guide:
+
+```
+https://kubernetes.io/ru/docs/tasks/tools/install-kubectl
+```
+
+
+## Samples available:
+- [Mongo-express-autoscale](https://github.com/Vincitore1402/k8s-learning/tree/master/mongo-express-autoscale)
 
 
