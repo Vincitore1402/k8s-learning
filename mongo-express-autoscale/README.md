@@ -1,6 +1,11 @@
 mongo-express-autoscale
 ========
 
+
+## Application schema
+
+![text](https://github.com/Vincitore1402/k8s-learning/blob/master/mongo-express-autoscale/images/schema.png)
+
 ## Usage
 
 1) Start minikube (may take some time for initial run)
@@ -48,10 +53,5 @@ kubectl autoscale deployment mongo-express-deployment --cpu-percent=50 --min=1 -
 ```$xslt
 minikube service mongo-express-service
 ```
-
-## Application schema
-
-
-![text](https://github.com/Vincitore1402/k8s-learning/blob/master/mongo-express-autoscale/schema.png)
 
 
