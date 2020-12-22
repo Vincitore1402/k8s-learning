@@ -53,5 +53,14 @@ kubectl autoscale deployment mongo-express-deployment --cpu-percent=50 --min=1 -
 ```$xslt
 minikube service mongo-express-service
 ```
+## Benchmarks/metrics
+
+**Autoscaling is disabled:**
+![autoscaling_is_disabled](https://github.com/Vincitore1402/k8s-learning/blob/master/mongo-express-autoscale/images/no_autoscale_benchmark.png)
+
+**Autoscaling is enabled (2 benchmarks one by one):**
+![autoscaling_is_enabled_1](https://github.com/Vincitore1402/k8s-learning/blob/master/mongo-express-autoscale/images/autoscale_benchmark_1.png)
+
+![autoscaling_is_enabled_2](https://github.com/Vincitore1402/k8s-learning/blob/master/mongo-express-autoscale/images/autoscale_benchmark_2.png)
 
 
