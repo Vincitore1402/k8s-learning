@@ -49,5 +49,9 @@ kubectl autoscale deployment mongo-express-deployment --cpu-percent=50 --min=1 -
 minikube service mongo-express-service
 ```
 
+## Application schema
+
+
+![text](https://github.com/Vincitore1402/k8s-learning/blob/master/mongo-express-autoscale/schema.png)
 
 
