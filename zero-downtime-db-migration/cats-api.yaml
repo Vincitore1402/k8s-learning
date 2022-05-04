@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cats-api
+  labels:
+    app: cats-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cats-api
+  template:
+    metadata:
+      labels:
+        app: cats-api
+    spec:
+      containers:
+        - name: cats-api
+          image: cats-api:0.0.1
+          ports:
+            - containerPort: 3000
+          env:
+#            - name: ME_CONFIG_MONGODB_ADMINUSERNAME
+#              value: root
+#            - name: ME_CONFIG_MONGODB_SERVER
+#              value: mongodb-0.mongodb-headless
+#            - name: ME_CONFIG_MONGODB_ADMINPASSWORD
+#              valueFrom:
+#                secretKeyRef:
+#                  name: mongodb
+#                  key: mongodb-root-password
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cats-api-service
+spec:
+  selector:
+    app: cats-api
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+      nodePort: 30000
